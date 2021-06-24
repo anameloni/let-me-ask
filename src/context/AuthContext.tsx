@@ -1,7 +1,6 @@
 import { createContext, ReactNode, useEffect, useState } from "react";
 import { auth, firebase } from "../services/firebase";
 
-
 type User = {
   id: string;
   name: string;
@@ -23,8 +22,10 @@ export function AuthContextProvider(props:AuthContextProviderProps) {
   const [user, setUser] = useState<User>();
 
   useEffect(() => {
-    //eventListener
+    // O método onAuthStateChanged() do firebase retorna pra const unsubscribe
+    // um método para paralisar o observer do firebase
     const unsubscribe = auth.onAuthStateChanged(user => {
+
       if(user) {
         const { displayName, photoURL, uid } = user;
 
@@ -39,10 +40,9 @@ export function AuthContextProvider(props:AuthContextProviderProps) {
         })
       }
     })
-
-    return () => {
-      unsubscribe();
-    }
+    // Ao executar a função unsubscribe, na verdade é executado o método para
+    // paralisar o observer do firebase
+    return () => { unsubscribe(); };
   }, [])
   
   async function signInWithGoogle() {
