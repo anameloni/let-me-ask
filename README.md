@@ -22,6 +22,8 @@
 </p>
 <br><br>
 
+<p>Acesse a aplicação clicando <a src="https://let-me-ask-814.web.app/rooms/new">aqui</a></p>
+
 # 🚀 Tecnologias
 
 ### Esse projeto foi desenvolvido com as seguintes tecnologias:
