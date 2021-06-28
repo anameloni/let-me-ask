@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="Let me ask" title="Let me ask" src="./src/assets/logo.svg" />
+    <img alt="Let me ask" title="Let me ask" src="./src/assets/images/logo.svg" />
 </h1>
 
 <p align="center">
@@ -14,19 +14,19 @@
   <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=000000">
 </p>
 
-<br>
-
 <p align="center" style="display:flex; justify-content: space-between;">
   <img alt="Home" src="./homeImg.png" width="45%" style="margin: 1rem;">
   <img alt="Create Room" src="./NewRoomImg.png" width="45%" style="margin: 1rem;">
 </p>
-<br><br>
 
-<p>Acesse a aplicação clicando <a src="https://let-me-ask-814.web.app/rooms/new">aqui</a></p>
+<p>Acesse a aplicação clicando <a href="https://let-me-ask-814.web.app/rooms/new">aqui</a></p>
+
+<br><br>
 
 # 🚀 Tecnologias
 
 ### Esse projeto foi desenvolvido com as seguintes tecnologias:
+<br>
 
 ## - [React](https://reactjs.org)
 ## - [Firebase](https://console.firebase.google.com/)
